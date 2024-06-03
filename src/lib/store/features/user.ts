@@ -1,15 +1,14 @@
 import { getAuth } from '@/lib/utils'
 import { createSlice } from '@reduxjs/toolkit'
 import { cookies } from 'next/headers'
+export interface UserInfo {
+    email: string
+}
 export interface UserState {
-    userInfo: {
-        email: string
-    }
+    userInfo?: UserInfo
 }
 const initialState: UserState = {
-    userInfo: getAuth() || {
-        email: ""
-    }
+    userInfo: getAuth()
 }
 export const userSlice = createSlice({
     name: 'user',
