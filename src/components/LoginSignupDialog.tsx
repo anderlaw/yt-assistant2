@@ -74,7 +74,7 @@ export default () => {
         <DialogFooter>
           <StateButton
             loading={loginLoading}
-            onBtnClick={function (): void {
+            onClick={function (): void {
               const data = getFormData();
               if (!data.email || !data.password) {
                 alert("输入无效");
@@ -103,6 +103,7 @@ export default () => {
                   } else {
                     toast({
                       title: "操作失败，请稍后重试！",
+                      variant: "destructive",
                     });
                   }
                 });

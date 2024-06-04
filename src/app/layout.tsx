@@ -45,17 +45,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
-        <StoreProvider>
-          
-          <LoginSignupDialog />
-          {children}
-        </StoreProvider>
+        <StoreProvider>{children}</StoreProvider>
         <Toaster />
       </body>
     </html>

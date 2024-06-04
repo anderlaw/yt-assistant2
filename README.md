@@ -34,3 +34,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+## youtube中转站
+
+快速部署个人youtube资源转换站，稳定
+
+
+### 快速下载并分享链接
+### 无需DB，持久化为本地（文件）
+### 依赖
+ffmpeg，yt-dlp
+
+### 功能
+- 支持添加视频
+- 支持订阅频道
+
+视频文件。
+频道文件。
+
+自动

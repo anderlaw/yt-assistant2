@@ -26,6 +26,7 @@
     "lucide-react": "^0.381.0",
     "mysql2": "^3.10.0",
     "next": "14.2.3",
+    "plyr": "^3.7.8",
     "react": "^18",
     "react-dom": "^18",
     "react-redux": "^9.1.2",

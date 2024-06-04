@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ReloadIcon } from "@radix-ui/react-icons";
 interface IProps {
   children?: string;
-  loading: boolean;
-  onBtnClick: () => void;
+  loading?: boolean;
+  onClick: () => void;
 }
 export default (props: IProps) => {
   return props.loading ? (
@@ -12,7 +12,7 @@ export default (props: IProps) => {
       Please wait
     </Button>
   ) : (
-    <Button type="button" onClick={props.onBtnClick}>
+    <Button type="button" onClick={props.onClick}>
       {props.children || "确定"}
     </Button>
   );
